@@ -1,12 +1,8 @@
-import { Provider } from 'react-redux';
-import App from './App';
 import React from 'react'
-import { store } from '../redux/store';
+import WithStore from '../component/with_store'
 
 export default function index() {
   return (
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <WithStore/>
   )
 }
