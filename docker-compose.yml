@@ -1,0 +1,13 @@
+version: "3.9"
+services :
+  app_ulventech:
+    build: .
+    container_name: "ulventech"
+    ports:
+      - "3000:3000"
+    expose: 
+      - "3000"
+    volumes:
+      - ./:/app
+    environment:
+      - ENV=docker
