@@ -1,12 +1,8 @@
-import Head from 'next/head'
-import axios from 'axios'
 import React, { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
-import { ListData, Datas, SomeType, payloadEdit } from './profile'
+import { ListData, Datas, SomeType, payloadEdit } from '../redux/profile'
 import { Container, AppBar, Button, Toolbar, Typography, InputLabel, FormControl, MenuItem, TextField, Box, Select } from '@mui/material';
-import { getData, selectListData, selectStatus, editing, submitDataThunk, selectResponseAfterSubmit, selectSubmitStatus } from './redux/ulventechSlice';
-import { useAppDispatch, useAppSelector } from './redux/hooks'
-import { env } from 'process';
+import { getData, selectListData, selectStatus, editing, submitDataThunk, selectResponseAfterSubmit, selectSubmitStatus } from '../redux/ulventechSlice';
+import { useAppDispatch, useAppSelector } from '../redux/hooks'
 import { useSelector } from 'react-redux';
 
 

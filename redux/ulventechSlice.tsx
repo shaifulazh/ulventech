@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { RootState, AppThunk } from './store';
-import { ListData, Datas, SomeType , payloadEdit } from '../profile'
+import { ListData, Datas, SomeType , payloadEdit } from './profile'
 
 export interface dataPackage {
   listData : ListData;
